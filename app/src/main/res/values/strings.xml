@@ -30,6 +30,7 @@ Temukan kode\ndibalik tutup botol
 </string>
     <string name="setiap_kali"> Setiap kali Anda berhasil memindai kode yang \nbelum pernah diklaim sebelumnya, Anda akan\n menerima 1 poin.</string>
 
+
     <string name="warning">Tutup botol Anda\nsudah ada yang klaim</string>
 
     <string name="scan_ktp">Scan KTP untuk melanjutkan proses klaim tutup botol. Pastikan foto KTP terlihat dengan jelas</string>
@@ -53,6 +54,6 @@ Temukan kode\ndibalik tutup botol
     <string name="penggunaroyal">Pengguna mendapatkan undian hadiah secara reguler</string>
     <string name="akhirbulan">Setiap akhir bulan</string>
     <string name="anda_belum_melakukan_penukaran_pada_bulan_ini">Anda belum melakukan penukaran\npada bulan ini</string>
-
+    <string name="kataktp">Scan KTP untuk melanjutkan proses klaim\ntutup botol. Pastikan foto KTP terlihat dengan\njelas</string>
 
 </resources>

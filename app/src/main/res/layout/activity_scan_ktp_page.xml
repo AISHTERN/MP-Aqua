@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     android:id="@+id/main"
-    tools:context=".scantutupbotol">
+    tools:context=".scan_ktp_page"
+    android:background="@color/white">
+
 
     <Button
         android:id="@+id/back"
@@ -15,23 +15,22 @@
         android:layout_height="17dp"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="25dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/ic_arrow"
-        android:onClick="panahkembalikelayer5"
-        tools:ignore="OnClick" />
+        android:layout_marginTop="36dp"
+        android:onClick="back"
+        android:background="@drawable/ic_arrow" />
 
     <TextView
         android:id="@+id/tutupbotol"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginStart="21dp"
-        android:layout_marginLeft="21dp"
-        android:layout_marginTop="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="32dp"
         android:layout_toEndOf="@+id/back"
         android:layout_toRightOf="@id/back"
         android:fontFamily="@font/montserratsemibold"
-        android:text="Scan Tutup Botol"
+        android:text="Scan KTP"
         android:textColor="@color/semi_black"
         android:textSize="18dp" />
 
@@ -49,18 +48,16 @@
 
     <TextView
         android:id="@+id/texttotaltutupbotol"
-        android:layout_width="162dp"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/profil"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="2dp"
-        android:layout_marginTop="14dp"
-        android:layout_marginEnd="-2dp"
+        android:layout_marginStart="115dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="80dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="Total Tutup Botol"
-        android:textAlignment="center"
         android:textColor="@color/black_scan"
         android:textSize="18sp" />
 
@@ -97,79 +94,66 @@
         android:textColor="@color/blue"
         android:textSize="18sp" />
 
-
     <TextView
         android:id="@+id/setiap"
-        android:layout_width="391dp"
-        android:layout_height="75dp"
+        android:layout_width="331dp"
+        android:layout_height="64dp"
         android:layout_below="@id/name"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-
-        android:layout_centerInParent="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="38dp"
         android:fontFamily="@font/montserratlight"
         android:gravity="center"
-        android:text="@string/setiap_kali"
+        android:text="@string/kataktp"
         android:textColor="@color/black"
         android:textSize="13dp" />
 
     <Button
         android:id="@+id/btn_scan"
-        android:layout_width="wrap_content"
-        android:layout_height="253dp"
+        android:layout_width="223dp"
+        android:layout_height="201dp"
         android:layout_above="@+id/btn_submit"
-        android:layout_below="@+id/setiap"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="92dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="95dp"
-        android:layout_marginBottom="73dp"
-        android:background="@drawable/scanfoto" />
-
-    <ImageView
-        android:id="@+id/alert_ijo"
-        android:layout_width="238dp"
-        android:layout_height="53dp"
-        android:layout_above="@+id/btn_submit"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/alert_ijo" />
-
-    <ImageView
-        android:id="@+id/alert_merah"
-        android:layout_width="238dp"
-        android:layout_height="53dp"
-        android:layout_above="@+id/btn_submit"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/alert_merah" />
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/scanktp" />
 
     <Button
         android:id="@+id/btn_submit"
         android:layout_width="350dp"
         android:layout_height="55dp"
-        android:layout_above="@+id/btncancel"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/btncancel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="31dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="61dp"
         android:background="@drawable/button_login_register"
-        android:text="Submit"
         android:onClick="submit"
-        android:enabled="false"
+        android:text="Save"
+        android:textAllCaps="false"
         android:textColor="@color/white" />
 
     <Button
         android:id="@+id/btncancel"
         android:layout_width="350dp"
         android:layout_height="55dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="493dp"
+        android:layout_marginEnd="31dp"
         android:layout_marginBottom="56dp"
         android:background="@drawable/rectanglegils"
+
         android:onClick="cancel"
         android:text="Cancel"
+        android:textAllCaps="false"
         android:textColor="@color/black_scan" />
+
 </RelativeLayout>
