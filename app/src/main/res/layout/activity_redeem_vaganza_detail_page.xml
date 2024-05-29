@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_redeemvaganza"
+    tools:context=".redeem_vaganza_detail_page">
+
+
+    <Button
+        android:id="@+id/backredeem"
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:onClick="back"
+        android:background="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/redeemvaganza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/backredeem"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="RedeemVaganza"
+        android:textColor="@color/semi_black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/royal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Royalvaganza"
+        android:textColor="@color/blue"
+        android:textSize="15dp"
+        android:fontFamily="@font/montserratbold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/redeemvaganza"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="366dp"
+        android:layout_height="174dp"
+        android:layout_below="@id/royal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-1dp"
+        app:srcCompat="@drawable/traveloka" />
+
+    <TextView
+        android:id="@+id/diskon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/diskon_traveloka"
+        android:fontFamily="@font/montserratsemibold"
+        android:textSize="15dp"
+        android:textColor="@color/semi_black"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_below="@id/imageView22"/>
+
+    <TextView
+        android:id="@+id/text_libur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/diskon"
+        android:layout_marginTop="6dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:layout_marginLeft="23dp"
+        android:textColor="@color/semi_black"
+        android:justificationMode="inter_word"
+        android:text="@string/text_liburan"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/syarat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_libur"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/syarat_ketentuan"
+        android:textColor="@color/semi_black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/syarat_ketentuan"
+        android:layout_width="341dp"
+        android:layout_height="104dp"
+        android:layout_below="@id/syarat"
+        android:layout_marginLeft="23dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/isi_syarat_ketentuan"
+        android:textColor="@color/semi_black"
+        android:textSize="13dp" />
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/syarat_ketentuan"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginRight="25dp"
+        android:layout_toRightOf="@id/jml_tukar">
+
+        <ImageView
+            android:id="@+id/plus_minus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/rectangle_plus_minus" />
+
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="42dp"
+            android:background="@drawable/circle_plus_minus"
+            app:srcCompat="@drawable/ic_plus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="27dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="2"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/circle_plus_minus"
+            app:srcCompat="@drawable/ic_minus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/plus_minus"
+            android:layout_marginLeft="158dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:text="400"
+            android:textColor="@color/semi_black"
+            android:textSize="15dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/jml_tukar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/syarat_ketentuan"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="105dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/jumlah_tukar"
+        android:textColor="@color/semi_black"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/jml_tukar"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="23dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="28dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/total_poin"
+        android:textColor="@color/semi_black"
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="79dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue"
+        android:fontFamily="@font/montserratsemibold"
+        android:onClick="redeemEkstraVaganza"
+        android:text="Redeem"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

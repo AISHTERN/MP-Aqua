@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".reedemvaganza">
+
+    <Button
+        android:id="@+id/backredeem"
+        android:layout_width="22dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="25dp"
+        android:onClick="redeem_vaganza_katalog_traveloka_back"
+        android:background="@drawable/ic_arrow" />
+
+    <TextView
+        android:id="@+id/redeemvaganza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/backredeem"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="RedeemVaganza"
+        android:textColor="@color/semi_black"
+        android:textSize="18dp" />
+
+    <TextView
+        android:id="@+id/sistem"
+        android:layout_width="76dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/backredeem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="284dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Sistem"
+        android:textColor="@color/semi_black"
+        android:textSize="13dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sistem"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="264dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="@string/periode"
+        android:textColor="@color/semi_black"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/pengguna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/redeemvaganza"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="55dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/pengguna_tukar"
+        android:textColor="@color/semi_black"
+        android:textSize="13dp" />
+
+    <TextView
+        android:id="@+id/kapan"
+        android:layout_width="224dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pengguna"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="28dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="@string/kapan_saja"
+        android:textColor="@color/semi_black"
+        android:textSize="13dp" />
+
+    <ImageView
+        android:id="@+id/line"
+        android:layout_width="350dp"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/kapan"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/line_sidebar_grey" />
+
+    <RelativeLayout
+        android:id="@+id/poin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/poin_anda"
+            android:layout_width="344dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_blue"
+            android:fontFamily="@font/montserratsemibold"
+            android:gravity="center_vertical"
+            android:paddingLeft="25dp"
+            android:text="Poin Anda"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:layout_width="58dp"
+            android:layout_height="37dp"
+            android:layout_alignTop="@+id/poin_anda"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="278dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserratsemibold"
+            android:gravity="center"
+            android:text="300"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/katalog"
+        android:layout_width="90dp"
+        android:layout_height="32dp"
+        android:layout_below="@+id/poin"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="282dp"
+        android:fontFamily="@font/montserratsemibold"
+        android:text="Katalog"
+        android:textColor="@color/semi_black"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/katalog">
+
+        <ImageButton
+            android:id="@+id/traveloka_grup"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="redeem_vaganza_katalog_traveloka"
+            android:background="@drawable/traveloka_grup"/>
+
+        <ImageButton
+            android:id="@+id/food_voucher"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/food_voucher"/>
+
+        <ImageButton
+            android:layout_below="@+id/traveloka_grup"
+            android:layout_marginTop="5dp"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/gojek"/>
+
+        <ImageButton
+            android:layout_below="@+id/food_voucher"
+            android:layout_marginTop="5dp"
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/shopee"/>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
